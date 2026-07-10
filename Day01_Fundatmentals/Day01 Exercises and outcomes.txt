@@ -1,0 +1,86 @@
+https://github.com/Roopeshbabu27/enterprise-ai-automation-journey
+
+✅ employee_intro.py
+
+empname = input("Enter Employee Name: ")
+empId = str(input("Enter Employee ID: "))
+empDept = input("Enter Department: ")
+
+print('''
+==================================
+Employee Registered Successfully
+==================================
+      ''')
+
+print(f"Welcome {empname}")
+print("Employee Id : " , empId)
+print("Department : " , empDept)
+
+
+✅ salary_calculator.py
+
+Basic = int(input("Enter your basic salary: "))
+Bonus = int(input("Enter your bonus: "))
+Tax = int(input("Enter your tax %: "))
+Gross = Basic+Bonus
+taxamount = Gross * (Tax / 100)
+net = Gross - taxamount 
+
+print(f"Gross Salary: {Gross}" )
+print(f"Tax Amount: {taxamount}" )
+print(f"Net Salary: {net}" )
+
+
+✅ employee_bonus.py
+
+Sal = int(input("Enter your salary: "))
+Bonus = 0
+if Sal > 100000:
+    Bonus = 20
+elif Sal > 50000:
+    Bonus = 10
+else:
+    Bonus = 5
+
+print("Salary: " , Sal , "Bonus: " , Bonus ,"%")
+
+
+✅ employee_email.py
+
+name = input("Enter your name: ")
+name= name.replace(' ','.')
+print(name+"@company.com")
+
+
+✅ employee_registration.py
+
+empname = input("Enter Employee Name: ")
+empAge = str(input("Enter Employee Age: "))
+empDept = input("Enter Department: ")
+empSal = input("Enter your salary: ")
+
+print('''
+================================
+
+Employee Registered Successfully
+
+================================
+
+'''
+)
+print("Name : ", empname)
+print("Age : ", empAge)
+print("Department : ", empDept)
+print("Salary : ", empSal)
+
+Which concept felt easiest?
+variable,string and basic concepts feels easy since it is common in all languages
+
+Which concept was confusing?
+nothing as of now since its very basic topics
+
+Did anything remind you of Bizagi?
+format string part 
+
+How would you rate today's difficulty (1–10)?
+0 very easy basic ones
