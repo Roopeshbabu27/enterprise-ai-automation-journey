@@ -49,9 +49,25 @@ AI Email Assistant
 
 ## Progress
 
-- ✅ Development Environment Setup
-- ⏳ Python Fundamentals
-- ⏳ Employee Data Automation
-- ⏳ Excel Automation
-- ⏳ API Integration
-- ⏳ AI Email Assistant
+### ✅ Day 01 - Python Fundamentals
+- Variables
+- Strings
+- Loops
+- Conditions
+- Employee Registration Programs
+
+### 🔄 Day 02 - Python Lists
+- List Operations
+- Employee Management
+- Employee Search
+- Salary Report
+
+Upcoming:
+- Dictionaries
+- Tuples
+- Sets
+- Functions
+- File Handling
+- Excel Automation
+- APIs
+- AI

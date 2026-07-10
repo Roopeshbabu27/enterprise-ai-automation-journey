@@ -21,6 +21,7 @@ while counter < 4:
     print("Age : ", employee_age)
     print("Department : ", employee_department)
     print("Salary : ", employee_salary)
+    print("Counter: ",counter)
 
     '''choice = input('Do you want to register another employee? Y/N').upper()
     if choice == "N":
