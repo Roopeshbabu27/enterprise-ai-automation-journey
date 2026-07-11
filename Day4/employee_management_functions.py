@@ -29,9 +29,8 @@ def delete_employee(employees, name):
     
 def generate_email(employee):
     if employee:
-        employee["name"] = employee["name"].lower()
-        employee["name"] = employee["name"].replace(" ", ".")
-        employee["email"] = employee["name"] + "@gmail.com"
+        formatted_name = employee["name"].lower().replace(" ", ".")
+        employee["email"] = formatted_name + "@gmail.com"
         return employee
 
 
@@ -62,8 +61,8 @@ def main():
     print("-----After Increase--------")
     display_employee(Updated_employee)
     print("-----Added Email Field--------")
-   # email = generate_email(employee)
-    #display_employee(email)
+    email = generate_email(employee)
+    display_employee(email)
     delete_employee(employees,name)
     print("-----Remaining Employees--------")
     print(employees)
