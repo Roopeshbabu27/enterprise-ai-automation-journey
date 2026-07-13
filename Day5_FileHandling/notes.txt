@@ -1,0 +1,2 @@
+Today I learned File Handling in Python.Tomorrow I will learn JSON.
+Tomorrow I will learn JSON.
