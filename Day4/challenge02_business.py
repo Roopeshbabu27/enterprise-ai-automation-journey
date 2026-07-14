@@ -59,8 +59,7 @@ employees = [
 def search_employee(employees, name):
     for x in range(len(employees)):
         if name == employees[x]["name"]:
-            print(name , employees[x]["name"])
-            return display_employee(employees[x])
+            display_employee(employees[x])
 
 
 res = search_employee(employees, "Priya")
