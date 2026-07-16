@@ -1,5 +1,5 @@
 import requests
-
+from datetime import datetime
 
 def get_coordinates(city):    
     geocode_url = f"https://geocoding-api.open-meteo.com/v1/search?name={city}&count=10&language=en&format=json"
@@ -23,33 +23,48 @@ def get_weather(latitude, longitude):
     weather_response = requests.get(weather_url)
     if weather_response.status_code == 200:
         data = weather_response.json()
-        return{
+        return {
             "temperature" : data["current"]["temperature_2m"],
-            "wind_speed" : data["current"]["wind_speed_10m"]
+            "wind_speed" : data["current"]["wind_speed_10m"],
+            "temperature_unit": data["current_units"]["temperature_2m"],
+            "wind_speed_unit": data["current_units"]["wind_speed_10m"],
+            "time": data["current"]["time"]
         }        
     else:
         print("No data found for this coordinates: ",weather_response.status_code)     
 
-def display_weather(city,temperature,wind_speed):
+def display_weather(city,weather):
     print(
-    '''
-    Weather Report
-    --------------
-    '''
+'''
+Weather Report
+--------------
+'''
     )
     print("City:", city)
-    print("Temparature:",temperature)
-    print("Wind Speed:",wind_speed)
+    print("Temparature:",weather["temperature"])
+    print("Temparature Unit:",weather["temperature_unit"])
+    print("Wind Speed:",weather["wind_speed"])
+    print("Wind Speed Unit:",weather["wind_speed_unit"])
 
-
+def is_day(time):
+    current_time = datetime.strptime(time, "%Y-%m-%dT%H:%M")
+    #day between 06:00 and 18:00
+    if 6 <= current_time.hour < 18:
+        return True
+    else:
+        return False
 
 def main():
     city = input("Enter a city: ")
     location = get_coordinates(city)
     if location:
         weather = get_weather(location["latitude"],location["longitude"])
-        temperature = weather["temperature"]
-        wind_speed = weather["wind_speed"]
-        display_weather(city,temperature,wind_speed)
+        time = weather["time"]
+        print(time)
+        display_weather(city,weather)
+        if is_day(time):
+            print("Its a day")
+        else:
+            print("Its a night")
 
 main()
