@@ -60,7 +60,6 @@ def main():
     if location:
         weather = get_weather(location["latitude"],location["longitude"])
         time = weather["time"]
-        print(time)
         display_weather(city,weather)
         if is_day(time):
             print("Its a day")
