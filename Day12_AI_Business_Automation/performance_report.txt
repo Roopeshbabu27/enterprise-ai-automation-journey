@@ -1,0 +1,40 @@
+
+        ==========================================
+        Employee: John
+        ==========================================
+
+        AI Performance Summary:
+        That sounds like a highly productive and collaborative week for John! 
+
+How would you like to use this information? I can help you:
+
+1. **Draft a weekly status update** or email to his manager.
+2. **Write a Slack/Teams "shout-out"** to recognize his teamwork.
+3. **Incorporate this into a performance review** or self-assessment.
+
+Let me know what you need!
+        ------------------------------------------
+        
+        ==========================================
+        Employee: John
+        ==========================================
+
+        AI Performance Summary:
+        It looks like you forgot to include the code block! 
+
+Please paste the code you would like me to review. Once you provide it, I will gladly:
+1. **Identify the errors** in your code.
+2. **Provide the corrected code block**.
+3. **Briefly explain why the errors occurred** so you can avoid them in the future.
+        ------------------------------------------
+        
+        ==========================================
+        Employee: John
+        ==========================================
+
+        AI Performance Summary:
+        It sounds like Sarah is an incredibly efficient and reliable worker! Finishing 18 tasks while meeting every single deadline is a great achievement. 
+
+Are you writing a performance review for Sarah, tracking team metrics, or is there something else I can help you with regarding this information?
+        ------------------------------------------
+        
