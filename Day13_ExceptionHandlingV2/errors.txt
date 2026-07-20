@@ -1,0 +1,2 @@
+2: FAIL
+Error: Simulated AI API Failure
