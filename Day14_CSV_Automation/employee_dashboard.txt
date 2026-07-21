@@ -1,0 +1,16 @@
+
+=========================
+Employee Dashboard
+=========================
+Total Employees : 5
+Total Salary    : 300000
+Average Salary  : 60000.00
+
+Highest Paid : Mike - Finance - 70000
+Lowest Paid  : David - Sales - 50000
+
+Department Summary
+IT : 2 Employees
+HR : 1 Employees
+Finance : 1 Employees
+Sales : 1 Employees
