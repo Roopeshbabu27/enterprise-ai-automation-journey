@@ -1,0 +1,15 @@
+
+    =========================
+    Employee Dashboard
+    =========================
+    Total Employees : 3
+    Total Salary    : 185000
+    Average Salary  : 61666.67   
+    Highest Paid    : 70000
+    Lowest Paid     : 55000
+
+    
+Department Summary
+IT : 1 Employees
+Finance : 1 Employees
+HR : 1 Employees
